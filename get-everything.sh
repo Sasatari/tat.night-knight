@@ -73,7 +73,7 @@ else
 fi
 
 if [[ -z "$(which atasm)" ]]; then
-  echo "Please install the atasm"
+  echo "Please install atasm and add it to your PATH env-variable"
 else
   echo "found atasm in \$PATH"
 
@@ -91,7 +91,7 @@ else
 fi
 
 if [[ ! -e ../firmware/ATARIXL.ROM ]]; then
-  echo "Please copy the ATARIXL.ROM firmware to ../fireware directory"
+  echo "Please copy the ATARIXL.ROM firmware to ../firmware directory"
   NEEDS=$((NEEDS+1))
 else
   echo "found ATARIXL.ROM firmware file"
